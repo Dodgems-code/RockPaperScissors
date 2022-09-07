@@ -8,13 +8,12 @@ function getComputerChoice() {
     return "Scissors";
   }
 }
-console.log(getComputerChoice());
 
-function getPlayerSelection() {
-    prompt("Please enter rock, paper or scissors").toLowerCase();
-    console.log(getPlayerSelection);
- }
+let computerChoice = getComputerChoice();
 
- const playerSelection = getPlayerSelection();
- const computerSelection = getComputerChoice();
- 
+let playerSelection = prompt("Please choose rock, paper or scissors!").toLowerCase();
+
+console.log(`Computer has chosen ${computerChoice}`);
+console.log("Player has selected " + playerSelection);
+
+
